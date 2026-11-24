@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小时哥哥 · 个人主页</title>
+  <style>
+    :root {
+      --bg: #faf9f7;
+      --card: #ffffff;
+      --text: #24292f;
+      --muted: #6b7280;
+      --accent: #ff7a45;
+      --accent-soft: #fff1e8;
+      --border: #eae6e1;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 80px 20px 40px;
+    }
+    .wrap { width: 100%; max-width: 640px; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 4px 24px rgba(0,0,0,.04);
+      margin-bottom: 20px;
+    }
+    .avatar {
+      width: 88px; height: 88px;
+      border-radius: 50%;
+      background: var(--accent-soft);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 40px;
+      margin-bottom: 20px;
+      border: 3px solid #fff;
+      box-shadow: 0 2px 12px rgba(255,122,69,.2);
+    }
+    h1 { font-size: 30px; letter-spacing: -.5px; margin-bottom: 6px; }
+    .handle { color: var(--muted); font-size: 15px; margin-bottom: 18px; }
+    .bio { font-size: 16px; color: #444c56; margin-bottom: 24px; }
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 8px; }
+    .tag {
+      background: var(--accent-soft); color: var(--accent);
+      font-size: 13px; padding: 4px 12px; border-radius: 999px;
+      border: 1px solid #ffdfcc;
+    }
+    .links { display: flex; flex-wrap: wrap; gap: 12px; }
+    .link {
+      display: inline-flex; align-items: center; gap: 6px;
+      color: var(--text); text-decoration: none;
+      border: 1px solid var(--border); border-radius: 8px;
+      padding: 8px 14px; font-size: 14px;
+      transition: all .15s;
+    }
+    .link:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-1px); }
+    h2 { font-size: 17px; margin-bottom: 14px; }
+    .note { font-size: 14px; color: var(--muted); }
+    footer { text-align: center; font-size: 13px; color: var(--muted); padding: 10px 0 0; }
+    @media (max-width: 480px) { .card { padding: 28px 22px; } h1 { font-size: 26px; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <div class="avatar">⚡</div>
+      <h1>小时哥哥</h1>
+      <div class="handle">@xiaoshi1209</div>
+      <p class="bio">你好呀，这里是我的小角落。<br>写点代码，折腾点新鲜玩意儿，偶尔发呆。</p>
+      <div class="tags">
+        <span class="tag">探索中</span>
+        <span class="tag">爱折腾</span>
+        <span class="tag">持续学习</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>🔗 找到我</h2>
+      <div class="links">
+        <a class="link" href="https://github.com/xiaoshi1209" target="_blank">GitHub</a>
+        <a class="link" href="mailto:you@example.com">邮箱</a>
+        <a class="link" href="#" onclick="return false">更多，敬请期待</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>📝 关于这个页面</h2>
+      <p class="note">
+        这是我的 GitHub Pages 个人主页，从零搭建。<br>
+        想改名字、简介、标签或链接？直接编辑本仓库的 <code>index.html</code>，改完保存，几分钟后自动生效。
+      </p>
+    </div>
+
+    <footer>Made with ⚡ by 小时哥哥 · 2026</footer>
+  </div>
+</body>
+</html>
